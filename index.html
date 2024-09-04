@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlowiseAI API Demo</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Alodokter</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Health</a></li>
+                <li><a href="#">Consultation</a></li>
+                <li><a href="#">Doctor Chat</a></li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="photos">
+        <img src="public/image1.png" alt="Health Information" class="photo">
+        <img src="public/image2.jpg" alt="Online Consultation" class="photo">
+        <img src="public/image3.jpg" alt="Chat with a Doctor" class="photo">
+    </div> 
+
+    <section class="services">
+        <div class="service">
+            <h3>Health Information</h3>
+            <p>Explore medical articles to better understand your health.</p>
+        </div>
+        <div class="service">
+            <h3>Online Consultation</h3>
+            <p>Book a medical appointment online quickly and easily.</p>
+        </div>
+        <div class="service">
+            <h3>Chat with a Doctor</h3>
+            <p>Get quick answers to your questions by chatting with a medical expert.</p>
+        </div>
+    </section>
+
+    <section class="hero">
+        <h2>Access Reliable Medical Information</h2>
+        <p>Chat with doctors 24/7 or book an online appointment.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Alodokter - All Rights Reserved</p>
+    </footer>
+    
+    <script type="module">
+        import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js";
+        Chatbot.init({
+            chatflowid: "dcc7244c-2651-47ec-80dc-9c34b3bcc155",
+            apiHost: "https://flowise-zjgs.onrender.com",
+        });
+    </script>
+</body>
+</html>
